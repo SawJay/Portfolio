@@ -40,59 +40,66 @@
     <div id="menuPillContainer" class="navbar navbar-dark">
         <nav id="menuPill" class="navbar-nav text-light">
             <div class="nav-item">
-                <a class="nav-link" href="#home">
-                    <div class="icon-container">
-                        <i class="bi bi-house-fill"></i>
-                    </div>
-                    <span class="menu-label">Home</span>      
+                <a class="nav-link active" href="#home" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <div class="icon-container">
+                    <i class="bi bi-house-fill"></i>
+                </div>
+                <span class="menu-label">Home</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link active" href="#about">
+                <a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="About" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-file-person-fill"></i>
                     </div>
-                    <span class="menu-label">About Me</span>      
+                    <span class="menu-label">About Me</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#skills">
+                <a class="nav-link" href="#skills" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-brush-fill"></i>
                     </div>
-                    <span class="menu-label">Skills</span>      
+                    <span class="menu-label">Skills</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#projects">
+                <a class="nav-link" href="#projects" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Projects" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-braces-asterisk"></i>
                     </div>
-                    <span class="menu-label">Projects</span>      
+                    <span class="menu-label">Projects</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#challenges">
+                <a class="nav-link" href="#challenges" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Challenges" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-terminal"></i>
                     </div>
-                    <span class="menu-label">Challenges</span>      
+                    <span class="menu-label">Challenges</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#blog">
+                <a class="nav-link" href="#blog" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Blog" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-quote"></i>
                     </div>
-                    <span class="menu-label">Blog</span>      
+                    <span class="menu-label">Blog</span>
                 </a>
             </div>
             <div class="nav-item">
-                <a class="nav-link" href="#contact">
+                <a class="nav-link" href="#contact" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Contact" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-envelope-at-fill"></i>
                     </div>
-                    <span class="menu-label">Contact</span>      
+                    <span class="menu-label">Contact</span>
                 </a>
             </div>
         </nav>
@@ -282,6 +289,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) 
+    </script>
 
 </body>
 
