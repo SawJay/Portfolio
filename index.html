@@ -32,13 +32,73 @@
     <link href="/css/site.css" rel="stylesheet" />
     <link href="/css/themes.css" rel="stylesheet" />
     <link href="/css/iconcard.css" rel="stylesheet" />
+    <link href="/css/menupill.css" rel="stylesheet" />
 </head>
 
 <body data-sd-theme="orange">
 
-    <div id="menuPillContainer"></div>
+    <div id="menuPillContainer" class="navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+            <div class="nav-item">
+                <a class="nav-link" href="#home">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">Home</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link active" href="#about">
+                    <div class="icon-container">
+                        <i class="bi bi-file-person-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#skills">
+                    <div class="icon-container">
+                        <i class="bi bi-brush-fill"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#projects">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Projects</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#challenges">
+                    <div class="icon-container">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+                    <span class="menu-label">Challenges</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#blog">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>      
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#contact">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact</span>      
+                </a>
+            </div>
+        </nav>
+    </div>
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <section id="home">
             <div id="homeCover">
                 <div class="mainHeader text-center">

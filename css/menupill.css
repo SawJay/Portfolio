@@ -1,0 +1,100 @@
+#menuPillContainer {
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+}
+
+#menuPill {
+    --menu-bg-color: rgba(0, 0, 0, 0.7);
+    
+    margin-left: 1rem;
+}
+
+#menuPill .nav-link {
+    /* override bootstrap nav bar colors */
+    --bs-navbar-active-color: var(--sd-theme-400);
+    --bs-navbar-hover-color: var(--sd-theme-200);
+    --bs-nav-link-hover-color: var(--sd-theme-200);
+    
+    display: flex;
+    align-items: center;
+    padding: 0;
+    max-width: 36px;
+    transition: max-width 0.25s ease-in-out;
+}
+
+#menuPill .nav-link:hover,
+#menuPill .nav-link.active {
+    max-width: 300px;
+}
+
+#menuPill .icon-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: .5rem;
+}
+
+#menuPill .menu-label {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: .5rem 0;
+    border-radius: 0 2rem 2rem 0;
+
+    max-width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transition: max-width 0.25s ease-in-out,
+            padding-right 0.25s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    #menuPill>.nav-item:nth-child(1) .icon-container {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        
+        transition: border-top-right-radius; 
+        transition-duration: 0.1s; 
+        transition-timing-function: ease-out;
+        transition-delay: 0.25s;
+    }
+
+    #menuPill>.nav-item:nth-child(1)>.nav-link:hover .icon-container,
+    #menuPill>.nav-item:nth-child(1)>.nav-link.active .icon-container {
+        border-top-right-radius: 0;
+        
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+    #menuPill>.nav-item:nth-last-child(1) .icon-container {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+        transition: border-bottom-right-radius; 
+        transition-duration: 0.1s; 
+        transition-timing-function: ease-out;
+        transition-delay: 0.25s;
+    }
+
+    #menuPill>.nav-item:nth-last-child(1)>.nav-link:hover .icon-container,
+    #menuPill>.nav-item:nth-last-child(1)>.nav-link.active .icon-container {
+        border-bottom-right-radius: 0;
+        
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+    #menuPill .nav-link:hover .menu-label, 
+    #menuPill .nav-link.active .menu-label {
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+
+    .section-page {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+}
