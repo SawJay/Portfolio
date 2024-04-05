@@ -55,8 +55,11 @@ section {
     --bs-btn-hover-border-color: var(--sd-theme-700);
     --bs-btn-active-bg: var(--sd-theme-800);
     --bs-btn-active-border-color: var(--sd-theme-800);
-    width: 250px;
     margin-top: 1em;
+  }
+
+  .btn-wide {
+    width: 70%;
   }
 
   a {
