@@ -58,6 +58,10 @@ section {
     margin-top: 1em;
   }
 
+  .btn-small {
+  margin-top: 0.35em;
+}
+
   .btn-wide {
     width: 70%;
   }
