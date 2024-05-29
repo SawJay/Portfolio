@@ -412,7 +412,34 @@
                     others and also learn from other developers through articles and blogs.
                 </p>
                 <div id="blogs">
-                    <article class="card mb-4 blog-article">
+                    <template id="blog-card-template">
+                        <article class="card mb-4 blog-article">
+                            <div class="row g-0 blog-row">
+                                <div class="col-lg-4 blog-header">
+                                    <a href="#" class="blog-image-link">
+                                    </a>
+                                    <div class="blog-date">
+                                        <div class="blog-day"></div>
+                                        <div class="blog-month"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                        <h2 class="card-title"></h2>
+                                        <p class="card-text line-clamp">
+                                        </p>
+                                        <div>
+                                            <a href="#" class="btn btn-primary">Read More</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <small class="text-muted"></small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </template>
+                    <!-- <article class="card mb-4 blog-article">
                         <div class="row g-0 blog-row">
                             <div class="col-lg-4 blog-header">
                                 <a href="#" class="blog-image-link">
@@ -543,7 +570,7 @@
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
                 </div>
             </div>
         </section>
@@ -859,12 +886,12 @@
     </div>
     <!-- End Project 2 Modal -->
 
-    <!-- Project 3 Modal -->
+    <!-- Code Blog Modal -->
     <div class="modal fade" id="projectThreeModal" tabindex="-1" aria-labelledby="projectThreeModal" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectThreeModalLabel">Tech Talk Blog</h1>
+                    <h1 class="modal-title fs-5" id="projectThreeModalLabel">Sawyers Code Blog</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -889,15 +916,15 @@
                                                 alt="Tech Talk Logo">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            <img src="/img/screenshots/codeblogSS1.jpg" class="d-block w-100"
                                                 alt="Bug Tracker SS 1">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            <img src="/img/screenshots/codeblogss2.jpg" class="d-block w-100"
                                                 alt="Bug Tracker SS 2">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            <img src="/img/screenshots/codeblogss3.jpg" class="d-block w-100"
                                                 alt="Bug Tracker SS 3">
                                         </div>
                                     </div>
@@ -970,7 +997,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary btn-small">Visit Project</button>
+                    <a href="https://sawyerscodeblog-production.up.railway.app" target="_blank"
+                        class="btn btn-primary btn-small">Visit Project</a>
                 </div>
             </div>
         </div>
@@ -985,6 +1013,8 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) 
     </script>
+
+    <script src="/js/blogApi.js"></script>
 
 </body>
 
