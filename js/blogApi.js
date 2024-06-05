@@ -1,7 +1,7 @@
 // you can test this locally by running your blog and using your localhost url,
 // but the BASE_URL must NOT be a localhost url when you push your changes to netlify
 
-const BASE_URL = 'https://localhost:7161'; // NOTE: with no / at the end!
+const BASE_URL = 'https://sawyerscodeblog-production.up.railway.app'; // NOTE: with no / at the end!
 const DEFAULT_BLOG_IMAGE = '/images/DefaultProfilePicture.png.png';
 // e.g. '/images/DefaultBlogImage.jpg';
 
