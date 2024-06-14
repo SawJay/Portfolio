@@ -30,7 +30,7 @@ function displayBlogPosts(blogPosts) {
         let imgTag = document.createElement('img');
         imgTag.setAttribute(
             "src",
-            BASE_URL + (blogPost.imageUrl || DEFAULT_BLOG_IMAGE)
+            BASE_URL + ("/" + (blogPost.imageUrl || DEFAULT_BLOG_IMAGE))
         );
         imgTag.classList.add('blog-image');
         imageDiv.appendChild(imgTag);
